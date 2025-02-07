@@ -19,3 +19,4 @@ if (notaNumeroEnteroRandom > 0) {
 } else {
   console.log("La nota no es válida (debe ser mayor a 0)."); //por si se añade un valor menor a 0
 }
+//Ya revise con distintos valores, funciona 
