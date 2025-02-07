@@ -21,7 +21,7 @@ Siempre va a devolver un valor boleano= true o false
 */
 let cinco = 5
 let cincoCadena = "5"
-
+//
 cinco == cincoCadena //igualdad debil, AQUI ARROJA UN -TRUE-;compara solo el valor no el tipo de dato 
 cinco === cincoCadena //igualdad estricta, AQUI ARROJA UN -FALSE-; compara el tipo de dato y no solo el valor
 //desigualdad debil 
