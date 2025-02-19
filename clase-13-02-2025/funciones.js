@@ -23,3 +23,16 @@ function saludarPersona(nombre){
 saludarPersona("Pedro")
 saludarPersona("guadalupe")
 saludarPersona("Lucia")
+
+//Sino  especificamos un return, la funcion nos devuelve undefined
+console.log("Ejecuto saludar()",saludar() )
+
+//una funcion puede devolver un valor return 
+function suma(num1,num2){
+    return num1 + num2
+}
+ console.log(suma(1,2))
+ console.log(suma(4,10))
+ console.log(suma(7,3))
+
+ 
