@@ -11,7 +11,8 @@
 
 
 */
-
+let edad = "una edad"
+let nacionalidad = "una nacionalidad"
 //PASO 1. DEFINIION DE UNA CLASE CON SUS ATRIBUTOS 
 class Persona {
 
@@ -24,10 +25,11 @@ class Persona {
 //METODOS de la CLASE
 saludar(){
     console.log("Hola, mi nombre es", this.nombre, "tengo", this.edad, "años, soy", this.nacionalidad)
+}
 despedir(nombreAmigo){
     console.log("Hasta luego",nombreAmigo)
 }
-}}
+}
 //PASO 2 Creación de/los objetos a partir de la clase 
 
 let persona1 = new Persona("Pedro", 23, "mexicano")
@@ -35,8 +37,9 @@ let persona1 = new Persona("Pedro", 23, "mexicano")
 console.log(persona1)
 // PASO 3 Llamar a los metodos de mi objeto
 persona1.saludar()
-
+persona1.despedir("Fernando")
 //EJERCICIO: Crear un objeto a partir de la clase persona con los datos de nombre 
 //new es una persona reservada que me ayuda a ejeutar el metodo constructor  que me ayuda a 
 //darle valores a los atributos de mi nuevo objeto
 let persona2 = new Persona ("lucia", 30, "canadiense")
+persona2.despedir("Mario")
