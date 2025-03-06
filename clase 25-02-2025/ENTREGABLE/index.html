@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseña Segura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>GENERADOR DE CONTRASEÑA SEGURA</h1>
+        </div>
+        <!-- muestra la contraseña generada -->
+        <div>
+            <input type="text" id="passwordField" class="password-box" readonly>
+        </div>
+        
+        <button onclick="generatePassword()">Generar Contraseña</button>
+        
+        <div class="options">
+            <h3>Opciones de Generación</h3>
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Incluir Mayúsculas
+            </label>
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Incluir Números
+            </label>
+            <label>
+                <input type="checkbox" id="symbols" checked>
+                Incluir Símbolos
+            </label>
+        </div>
+        
+<!-- Barra deslizante para elegir la longitud de la contraseña (de 8 a 16 caracteres) -->
+        <div class="length-option">
+            <label for="length">Longitud de la contraseña:</label>
+            <input type="range" id="length" min="8" max="16" value="12">
+            <span id="lengthValue">12</span> caracteres
+        </div>
+
+        <div id="securityResult" class="security-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
